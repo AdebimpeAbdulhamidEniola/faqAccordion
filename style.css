@@ -1,0 +1,147 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:"WorkSansRegular" ;
+    src: url("assets/fonts/static/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family:"WorkSansBold" ;
+    src: url("assets/fonts/static/WorkSans-Bold.ttf");
+}
+@font-face {
+    font-family: "WorkSansSemiBold";
+    src: url("assets/fonts/static/WorkSans-SemiBold.ttf");
+}
+
+:root {
+    font-size: 16px;
+}
+
+.bg-pattern-holder {
+    background-image: url("assets/images/background-pattern-mobile.svg");
+    background-repeat: repeat;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-right: 2em;
+    color: aquamarine;
+}
+
+body {
+    background-color:  hsl(275, 100%, 97%);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    position: relative;
+}
+body * + * {
+    margin-top: 1.3em;
+}
+
+section {  
+    margin: 40px auto;
+    background:  hsl(0, 0%, 100%);
+    width: 282px;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "WorkSansBold";
+    color:   hsl(292, 42%, 14%);
+    margin-left: 2em;
+}
+.h1div {
+    position: relative;
+} 
+
+h1::before {
+    content: url("assets/images/icon-star.svg");
+    transform: translateY(50%);
+    position: absolute;
+    top: -6px;
+    transform: translateY(4%);
+    margin-right: 2em;
+    left: -10px;
+
+}
+.label {
+    position: relative;
+    cursor: pointer;
+    font-family: "WorkSansSemiBold";
+    color:  hsl(292, 42%, 14%);
+
+}
+
+section {
+    position: absolute;
+    top: 70px;
+    left: 30%;
+    transform: translateX(-30%);
+    padding:  1.6em;
+    box-shadow: -3px 10px 15px 2px hsl(292, 42%, 14%, .2);
+}
+
+.container {
+    position: relative;
+    margin-top: 2em;
+}
+
+.content {
+    height: 0;
+    overflow: hidden;
+    font-family: "WorkSansRegular";
+}
+
+
+.label::before {
+    content: url("assets/images/icon-plus.svg");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -17px;
+    margin-left: 4em;
+}
+.label:hover, .label:focus, .label:active{
+    color:  hsl(292, 16%, 49%);
+}
+hr {
+    margin-left: 0;
+    background-color: 1px solid  hsl(275, 100%, 97%);
+}
+
+.container.active .content {
+    height: 90px;
+    color:   hsl(292, 16%, 49%);
+}
+
+.container.active .label::before {
+    content: url("assets/images/icon-minus.svg");
+}
+
+
+@media(min-width: 955px) {
+    .bg-pattern-holder {
+        background-image: url("assets/images/background-pattern-desktop.svg");
+        width: 100%;
+    }
+
+    section {
+        width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .label::before {
+        margin-right: 1em;
+    }
+
+}
