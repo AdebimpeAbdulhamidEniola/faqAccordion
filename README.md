@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Github Link](https://github.com/AdebimpeAbdulhamidEniola/faqAccordion.git)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 
@@ -42,4 +42,4 @@ Users should be able to:
 ## Author
 
 - Whatsapp - +2348109419385
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/AdebimpeAbdulhamidEniola)
+- Frontend Mentor - [@AdebimpeAbdulhamidEniola](https://www.frontendmentor.io/profile/AdebimpeAbdulhamidEniola)
