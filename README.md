@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Link](https://github.com/AdebimpeAbdulhamidEniola/faqAccordion.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [The Live Site Link](https://adebimpeabdulhamideniola.github.io/faqAccordion/)
 
 
 ### Built with
